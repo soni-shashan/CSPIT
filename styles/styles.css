@@ -98,7 +98,7 @@ body::-webkit-scrollbar {
 }
 
 .box {
-  width: 100%;
+  /* width: calc(50% - 10px); Adjust box width for responsiveness */
   position: relative;
   overflow: hidden; /* Ensure that the shadow effect stays within the box */
   transition: box-shadow 0.3s ease; /* Smooth transition for the shadow effect */
@@ -110,6 +110,7 @@ body::-webkit-scrollbar {
 
 .box img {
   width: 100%;
+  height: auto; /* Ensure the image scales correctly */
   transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for the image effect */
 }
 
@@ -124,18 +125,36 @@ body::-webkit-scrollbar {
   left: 0;
   width: 100%;
   padding: 10px;
-  background-color: #ff5222b3;
+  background-color: rgba(255, 82, 34, 0.7); /* Adjust opacity for better visibility */
   color: white;
   transition: background-color 0.3s ease; /* Smooth transition for content background */
 }
 
 .box:hover .content {
-  background-color: #ff5222e0; /* Darker background color on hover */
+  background-color: rgba(255, 82, 34, 0.9); /* Darker background color on hover */
 }
 
 .box .content h2 {
   margin-top: 0;
 }
+
+/* Media Query for Mobile Devices */
+@media (max-width: 768px) {
+  .box {
+    width: 100%; /* Full width on small screens */
+  }
+
+  .box img {
+    height: 200px; /* Set a fixed height for images on smaller screens to maintain layout */
+    object-fit: cover; /* Ensure the image covers the container */
+  }
+
+  .box .content {
+    position: relative; /* Change positioning for better display on small screens */
+    background-color: rgba(255, 82, 34, 0.9); /* Maintain consistent background color */
+  }
+}
+
 
 .about-section {
   background-color: var(--secondary-color);
