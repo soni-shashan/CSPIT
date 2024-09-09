@@ -1,0 +1,38 @@
+.footer-section {
+    background-color: var(--footer-color, #343a40);
+    color: #ffffff;
+    padding: 20px 0;
+  }
+  
+  .footer-section a {
+    color: #dedbd3;
+    text-decoration: none;
+  }
+  
+  .footer-section a:hover {
+    color: #ffffff;
+    text-decoration: underline;
+  }
+  
+  .footer-links {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .footer-links li {
+    margin-bottom: 10px;
+  }
+  
+  .social-links {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .social-links li {
+    margin-bottom: 10px;
+  }
+  
+  .social-links i {
+    margin-right: 10px;
+  }
+  
