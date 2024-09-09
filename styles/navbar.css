@@ -91,7 +91,7 @@
       .nav-link1 {
         color: #fff !important;
         padding: 4px 4px; /* Increased padding for larger tabs */
-        font-size: 1.1rem; /* Makes the tabs larger */
+        font-size: 1.2rem; /* Makes the tabs larger */
         font-weight: bold; /* Bold text for main tabs */
         text-decoration: solid;
       }
@@ -105,6 +105,6 @@
       .navbar-brand1 {
         color: #fff;
         font-weight: bold;
-        font-size: 1.4rem; /* Slightly larger font size */
+        font-size: 0.8rem; /* Slightly larger font size */
       }
       }
